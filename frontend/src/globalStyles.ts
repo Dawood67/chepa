@@ -4,13 +4,15 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Readex Pro', sans-serif;
+  font-family: 'Passion One', cursive;
   } 
  body
 {
   overflow-x: hidden !important;
-  font-family: 'Poppins', sans-serif;
-   
+  font-family: 'Readex Pro', sans-serif;
+  font-family: 'Passion One', cursive;
+  background: #070E19;
 }
 
 iframe

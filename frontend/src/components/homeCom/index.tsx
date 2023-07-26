@@ -8,6 +8,14 @@ import { ConnectModal } from "components/common/modal";
 import { Navbar } from "components/common";
 import { Form } from "pages";
 import { Button, Modal } from "antd";
+import HeroComp from "./heroSection";
+import AboutComp from "./aboutSection";
+import BuyComp from "./buySection";
+import TokennomicsComp from "./tokennomicsSection";
+import FeedBackComp from "./feedbackSection";
+import JoinComp from "./joinSection";
+import FooterComp from "./footerSection";
+import BuyChepaComp from "./buyChepaSection";
 
 const HomeCom = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,7 +41,15 @@ const HomeCom = () => {
   return (
     <div>
       <Navbar />
-      <button onClick={showModal}>Connect</button>
+      <HeroComp />
+      <AboutComp />
+      <BuyComp />
+      <BuyChepaComp />
+      <TokennomicsComp />
+      <FeedBackComp />
+      <JoinComp />
+      <FooterComp />
+      {/* <button onClick={showModal}>Connect</button>
       <Modal
         open={isModalOpen}
         onOk={handleOk}
@@ -62,7 +78,7 @@ const HomeCom = () => {
       <p>account: {account}</p>
 
       <Form />
-      <MainTable />
+      <MainTable /> */}
     </div>
   );
 };

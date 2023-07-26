@@ -1,20 +1,28 @@
-import { NavbarWrapper } from "./element";
+import { ConnectBtn, NavbarWrapper } from "./element";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { MainContainer } from "components/common";
+import { Image } from "react-bootstrap";
+import { logo } from "assets";
 
 function Topbar() {
   return (
     <NavbarWrapper>
       <Navbar bg="light" expand="lg">
         <MainContainer>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <Image src={logo} />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
+            <Nav className="ms-auto">
+              <Nav.Link href="#home">about</Nav.Link>
+              <Nav.Link href="#link">How to Buy</Nav.Link>
+              <Nav.Link href="#link">Tokenomics</Nav.Link>
+              <Nav.Link href="#link">Whitepaper</Nav.Link>
+              <Nav.Link href="#link">0.05661 ETH</Nav.Link>
             </Nav>
+            <ConnectBtn>CONNECT WALLET </ConnectBtn>
           </Navbar.Collapse>
         </MainContainer>
       </Navbar>

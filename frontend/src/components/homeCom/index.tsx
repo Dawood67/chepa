@@ -16,6 +16,7 @@ import FeedBackComp from "./feedbackSection";
 import JoinComp from "./joinSection";
 import FooterComp from "./footerSection";
 import BuyChepaComp from "./buyChepaSection";
+import LiveMarketPrices from "./liveMarketPrices";
 
 const HomeCom = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -42,9 +43,11 @@ const HomeCom = () => {
     <div>
       <Navbar />
       <HeroComp />
+      <LiveMarketPrices />
       <AboutComp />
       <BuyComp />
       <BuyChepaComp />
+
       <TokennomicsComp />
       <FeedBackComp />
       <JoinComp />

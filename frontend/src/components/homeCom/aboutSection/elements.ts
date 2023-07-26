@@ -5,6 +5,7 @@ export const MainSection = styled.section`
 
   .container {
     padding-bottom: 6rem;
+    margin-top: 6rem;
   }
 `;
 

@@ -16,3 +16,4 @@ export { default as facebookimg } from "./images/facebook.png";
 export { default as twitterimg } from "./images/twitter.png";
 export { default as telegramimg } from "./images/telegram.png";
 export { default as youtubeimg } from "./images/youtube.png";
+export { default as info } from "./images/info.png";

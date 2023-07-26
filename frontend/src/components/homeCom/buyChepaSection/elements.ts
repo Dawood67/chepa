@@ -1,30 +1,23 @@
 import styled from "styled-components";
 
 export const MainSection = styled.section`
-  /* overflow: hidden; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .container {
-    margin-top: 6rem;
-    padding-bottom: 6rem;
+  .second-div {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
   }
 
-  .form-control {
-    background-color: transparent;
-
-    &:focus {
-      box-shadow: none;
-    }
-  }
-
-  .form-text {
-    color: #fff;
-    text-align: justify;
-
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27.5px; /* 114.583% */
-    text-transform: uppercase;
+  .icon {
+    text-align: center;
+    margin-top: 2rem;
   }
 `;
 
